@@ -1,0 +1,109 @@
+/* The comment section for the home page */
+#comment-container-overall{
+    padding: 5px 0px;
+    /* background-color: rgb(155, 153, 153); */
+    color: rgb(21, 50, 78);
+    font-family:cursive;
+    max-width: 300px;
+    margin: 0px 20px 0px 100px;
+    border-radius: 5px;
+}
+  
+/* for the comment section */
+@media screen and (max-width: 400px) {
+
+    textarea#comment{
+        width: 200px;
+        height: 100px;
+    }
+
+    input.forminput{
+        width: 200px;
+        height: 35px;
+    }
+
+    div#comment-container-overall{
+        width: 240px;
+        margin: 0px 30px 0px 40px;
+        font-size: smaller;
+    }
+    
+}
+
+form p{
+    color: white;
+    border: 1px solid teal;
+    background-color: teal;
+    font-size: smaller;
+    font-family: cursive;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0px;
+}
+
+#comment-container-overall form{
+    display: block;
+    width: fit-content;
+    padding: 0px 20px;
+    border: 2px solid rgb(21, 50, 78);
+    border-radius: 5px;
+}
+
+#comment{
+    color: darkslategray;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid #aaa;
+    width: 270px;
+    border-radius: 5px;
+}
+
+textarea#comment{
+ border: 1px solid darkslategray;   
+}
+  
+.forminput{
+    color:darkslategray;
+    height: 45px;
+    padding: 0px 15px;
+    margin: 3px 0px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    width: 258px;
+}
+  
+.forminput:focus,
+#comment:focus{
+    border: 1px solid teal;
+    outline: 1px solid teal;
+}
+  
+/* The submit button at the 
+comment section of the page */
+#submitbutton{
+    position: relative;
+    background-color:teal;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: 2px solid teal;
+    margin: 5px 0px 5px;
+}
+
+/* hovering over the submit button */
+#submitbutton:hover,
+#submitbutton:focus{
+    background-color: teal;
+    color: white;
+    border: 2px solid white;
+    outline: 3px solid teal;
+    transition: ease 600ms;
+}
+
+.comment-in-container{
+    display: inline-block;
+}
+
+#name-and-mail-address-container{
+    width: 250px;
+}

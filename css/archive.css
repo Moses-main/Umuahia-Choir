@@ -1,0 +1,723 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0px;
+    background-color:  rgb(6, 1, 34);
+}
+
+span.e-icon{
+    text-decoration: none;
+    border-bottom: transparent;
+}
+nav#navigationBar{
+    /* background: linear-gradient(rgba(14, 14, 100, 0.884), rgba(34, 34, 92, 0.733), rgba(173, 216, 230, 0.603)),url(/Picture/Coding_picture/1440x810_cmsv2_3887acea-8e2f-52b5-98de-e1b1974923df-6324848.jpg); */
+    background: linear-gradient(rgba(6, 1, 34, 0.918), rgba(133, 12, 12, 0.692)),url(/Picture/Coding_picture/1440x810_cmsv2_3887acea-8e2f-52b5-98de-e1b1974923df-6324848.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding-top: 40px;
+}
+
+nav#navigationBar::after{
+    content: "";
+    visibility: hidden;
+    display: block;
+    padding: 100px;
+}
+
+.main{
+    color: rgb(250, 74, 74);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.songName{
+    color: rgb(250, 74, 74);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* the second navigation */
+
+
+#archiveToggle{
+    margin: -30px 0px 5px 30px;
+}
+  
+  
+
+#archiveNav2{
+    box-shadow: 3px 3px 4px rgb(21, 50, 78);
+display: none;
+border-radius: 5px;
+background-color: rgb(21, 50, 78) ;
+position:absolute;
+top: 30px;
+z-index: 1;
+width: 210px;
+left: 200px;
+padding: 10px 5px 0px 20px;
+transform: translate(-75%);
+-webkit-transition: transform 900ms;
+transition: transform 900ms;
+}
+
+#archiveNav2 a{
+border: 1px solid pink;
+display:block;
+padding: 10px 70% 10px 5px;
+-webkit-transition: ease 400ms;
+transition: ease 400ms;
+margin: 5px 5px 5px -10px ;
+color: pink;
+float: left;
+width: 50px;
+border-radius: 3px;
+text-decoration: none;
+}
+
+
+#archiveNav2 a:link {
+color:pink;
+}
+
+#archiveNav2 a:visited {
+color:#aaa;
+}
+
+#archiveNav2 a:hover,
+#archiveNav2 a:focus        {
+color:black;
+outline: 1px solid #ccc ;
+border-radius: 3px;
+background-color: white;
+padding: auto 70px;
+border: 1px solid white;
+}
+
+#archiveNav2 a:active {
+color:red;
+}
+
+/* search section */
+input[class='search']{
+    width: 205px;
+    /* float: left; */
+    display: block;
+    margin-top: 40px;
+    margin-left: -215px;
+}
+input[class='search']:focus{
+    border: 1px solid white;
+    outline: 1px solid white;
+}
+
+
+/* for the menu icon */
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color:white;
+margin: 6px 0;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+/* Search input on the second nav */
+#archiveNav2 form{
+  margin-top: 15px;
+}
+
+#archiveNav2 form::after{
+  content: " ";
+  padding-bottom:5px;
+  display: block;
+  visibility: hidden;
+}
+
+
+/* the search input at the home page */
+#navigation form{
+  float: right;
+  margin-right: 40px;
+} 
+
+
+/* The search input itself */
+.search, .secondSearch{
+  height: 40px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+/* the search bar at
+on small screen */
+.secondSearch{
+    display: block;
+    margin: 280px 20px 0px -40px;
+}
+
+.secondSearch:focus{
+    outline: 1px solid white;
+    border: 1px solid white;
+}
+
+
+
+/* INTO THE ABOUT PAGE */
+#library{
+    background-color: rgb(6, 1, 34);
+}
+
+#about-nav-container{
+    display: inline-flex;
+    position: fixed;
+    align-content: space-around;
+    width: 100%;
+    background-color: red;
+    max-height: 0px;
+    z-index: 1;
+}
+
+
+/* The search bar at
+the first navigation
+at the archive section */
+input.search{
+    display: inline;
+    float: right;
+}
+
+form#content{
+    padding: 20px 0px;
+    margin: -90px 0px 0px 30px;
+}
+
+#about-nav{
+    display: inline;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color:  rgb(21, 50, 78);
+    border: 1px solid  rgb(21, 50, 78);
+    padding:20px 50px 45px 20px;
+}
+
+#about-nav a{
+    margin-left: 25px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+#about-nav a:hover{
+    padding-bottom: 5px;
+    background-color:  rgb(6, 1, 34);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    padding: 42px 5px;
+    height: 100%;
+}
+
+#about-nav #main{
+    color: rgb(250, 74, 74);
+    font-weight: bold;
+}
+
+#about-me-pic{
+    height: 400px;
+    border-radius: 25px;
+    display: inline-block;
+    width: auto;
+    padding: 20px;
+    object-fit: cover;
+}
+
+#detail{
+    padding: 5px 5px 20px;
+    line-height: 10px;
+    border: 1px solid  rgb(250, 74, 74);
+    clear: both;
+    border-radius: 5px;
+}
+
+.small{
+    font-size: small;
+}
+#about-me-body{
+    padding: 2px 10px 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: 30px auto;
+}
+
+#image-cont{
+    float:left;
+    margin: 5px 10px 10px 0px;
+    clear: both;
+}
+
+.border-bottom{
+    border-bottom: 1px solid rgb(250, 74, 74);
+    padding: 0px 0px 3px 0px;
+}
+
+#sec{
+    float: right;
+    margin:0px 15px;
+    padding: 0px 10px 0px 0px;
+}
+
+
+
+@media screen and (max-width: 630px) {
+    
+    #discover-container{
+        clear: both;
+    }
+    
+}
+
+@media screen and (max-width: 912px) {
+    #detail{
+        clear: both;
+    }
+}
+
+
+@media screen and (min-width: 830px) {
+    #detail{
+        clear: none;
+        border:transparent;
+    }
+}
+
+/* #about-nav-container a.main-toggle{
+    display: none;
+} */
+
+div#archive{
+    text-align: center;
+}
+
+@media screen and (max-width: 642px) and (min-width: 590px) {
+ 
+    div#archive{
+        margin: auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    div#archive{
+        text-align: center;
+    }
+
+    div.book-container .white{
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 1275px) {
+    div#archive{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    div#archive{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:670px) {
+
+    #about-nav-container{
+        top: 50px;
+    }
+
+
+   #about-nav-container a.main-toggle{
+        display: inline-block;
+        visibility: visible;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        /* color:rgb(245, 110, 110); */
+        color: white;
+        /* margin: 30px; */
+        cursor: pointer;
+        margin-left:70px;
+        position: relative;
+        background-color:  rgb(6, 1, 34);
+        border-radius: 5px;
+    }
+
+    #about-nav a{
+        display: block;
+        padding:7px 0px;
+    }
+
+    #about-nav{
+        background-color:rgb(21, 50, 78);
+        position: absolute;
+        display: none;
+        border-radius: 5px;
+    }
+
+
+    #about-nav-container{
+        height: 100%;
+    }
+
+    #image-cont{
+        margin-left: -25px;
+    }
+
+    #about-me-pic{
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    #detail{
+        padding: 0px 5px;
+        width: fit-content;
+    }
+
+    #detail div{
+        display: block;
+        float: none;
+        padding: 5px 0px;
+    }
+
+    #sec{
+        margin-left: -1px;
+        padding: 3px;
+    }
+}
+
+
+@media screen and (min-width:670px) {
+    
+    #archiveToggle{
+        display: none;
+    }
+    
+}
+
+#download{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(250, 74, 74);
+    border: 1px solid rgb(250, 74, 74);
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px;
+}
+
+
+
+#download:hover{
+    color: rgb(250, 74, 74);
+    /* text-decoration: none; */
+    background-color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    -webkit-transition: background-color 500ms;
+    transition: background-color 500ms;
+}
+
+.e{
+    font-style: none;
+    border-bottom: transparent;
+}
+
+/* DONE WITH THE ABOUT PAGE */
+
+
+
+
+/* ENTERING TO THE PORTFOLIO PAGE */
+
+.book-container{
+    border: 1px solid white;
+    width: 250px;
+    overflow:hidden;
+    padding: 20px 10px 0px;
+    line-height: 18px;
+    color: rgb(250, 74, 74);
+    margin: 20px 20px;
+    border-radius: 5px;
+    /* font-size: small; */
+    height: 150px;
+    display: inline-block;
+    text-align: left;
+}
+
+.white{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+}
+
+#only-white{
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* DONE WITH THE SERVICE SECTION */
+
+
+
+
+
+
+/* ENTERING TO THE LIBRARY SECTION */
+
+
+.book-pic{
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    margin-left:30px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .book-pic{
+        height: 120px;
+        width: auto;
+        object-fit: cover;
+        text-align: center;
+        border-radius: 3px;
+        margin-top: 6px;
+    }
+
+    .main{
+        font-size: 14px;
+    }
+
+    .white{
+        font-size: 13px;
+    }
+
+    #download{
+        font-size: 11px;
+    }
+
+    #about-nav-container a.main-toggle{
+        color: rgb(203, 164, 243);
+        font-size: 35px;
+        position: fixed;
+        
+        right: 5px;
+        top: 30px;
+    }
+
+    #about-nav-container a.main-toggle:hover{
+        color:rgb(250, 74, 74) ;
+    }
+
+    #about-nav{
+        position: relative;
+        top: 80px;
+    }
+}
+
+
+/* DONE WITH THE LIBRARY */
+
+
+
+
+/* ENTERING INTO THE CONNECT SECTION */
+
+#connect{
+    background: linear-gradient( rgb(6, 1, 34),rgb(59, 28, 2));
+}
+
+#connect-body{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+#connect-pic{
+    border-radius: 3px;
+    height: 200px;
+    width: auto;
+}
+
+
+
+
+
+
+/* footer */
+
+  /* Footer at the home page */
+
+  footer#socialPlat{
+    background-color: rgb(21, 50, 78);
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    margin: 0px;
+}
+
+#arrow-up{
+    color: rgb(155, 155, 155);
+    border-radius: 5px;
+    font-size: 2rem;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgb(155, 155, 155);
+    margin-right: 15px;
+    float: right;
+    width: fit-content;
+}
+  
+    
+#arrow-up:hover,
+#arrow-up:focus{
+    border-color: white;
+    color: white;
+}
+  
+div#below-footer{
+    z-index: 9;
+    margin: 0px;
+    background-color: rgb(6, 20, 32);
+    color: rgb(90, 88, 88);
+}
+.after-footer-image-container img{
+    height: 40px;
+    border-radius: 50%;
+    margin: 15px 5px 15px 5px;
+    object-fit: cover;
+
+}
+
+
+.after-footer-image-container{
+    display: inline-flex;
+}
+
+
+.after-footer-image-container p{
+    font-size: small;
+    margin: auto 8px;
+}
+
+.footer-inside div{
+    width: fit-content;
+    margin: 12px;
+    height: 150px;
+    /* border: 1px solid white; */
+    display: inline-block;
+    padding: 5px 25px 0px 0px;
+}
+
+.footer-content span{
+    color: white;
+    font-size: small;
+    border-bottom: 2px solid blue;
+    padding:0px 0px 3px 5px;
+}
+
+.footer-content a{
+    color: whitesmoke;
+    font-size: small;
+    text-align: left;
+    padding: 0px 0px 5px 5px;
+    text-decoration: none;
+
+}
+
+.footer-content :nth-child(2){
+    margin-top: 1rem;
+}
+
+.footer-content a{
+    display: block;
+}
+
+.footer-content a:hover{
+    color: coral;
+}
+
+
+img.social{
+    height: 20px;
+}
+
+
+
+
+/* responsiveness */
+
+@media screen and (max-width: 440px) {
+    p#terms{
+      font-size: 10px;
+    }
+  
+    div.footer-content a{
+      padding: 8px 0px;
+    }
+  
+    section#description ul li{
+      padding: 20px 0px;
+    }
+    .book-container{
+        width: 100px;   
+        height: 220px;
+        margin: 8px 5px;
+    }
+}
+
+
+@media screen and (min-width:440px) and (max-width:644px){
+
+    .book-container{
+        width: 100px;   
+        height: 220px;
+        margin: 8px 5px;
+    }
+    
+    #archive{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+  
